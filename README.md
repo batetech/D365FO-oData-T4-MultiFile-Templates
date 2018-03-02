@@ -8,7 +8,7 @@ To find the edits to the standard oData T4 template, you can search for "xxce" w
 To use these files:
   1. Install the "OData v4 Client Code Generator" Visual Studio extension (Open Visual Studio > Tools > Extensions and Updates > search for "OData v4 Client Code Generator" published by Microsoft)
   2. In your project, add new item, and select "OData Client", name the file "D365ODataClient.tt"
-  3. Replace, the generated tt and ttinclude files with the file from this project
+  3. Replace the generated tt and ttinclude files with the files from this project
 
 To refresh the data entity client
   1. Open your browser of preference. 
@@ -20,7 +20,7 @@ To refresh the data entity client
   7. Edit this line to point to the file:
 		public const string MetadataDocumentUri = "file:///C:/Temp/data$metadata.xml";
   8. Save the .tt file, and click "OK" when prompted to refresh it.
-    If you aren't prompted when saving the file, then right click on the file and choose "run custom tool"
+    If you aren't prompted when saving the file, then right click on the "D365ODataClient.tt" file and choose "run custom tool"
   9. This will regenerate the odata client classes located under the D365ODataClient namespace (or whatever you have set as the NamespacePrefix in the D365ODataClient.tt file), so that you can use any new Data Entities, or access newly added fields/actions/etc.
 
 
