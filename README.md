@@ -12,8 +12,8 @@ To use these files:
 
 To refresh the data entity client
   1. Open your browser of preference. 
-  2. Go here to get auth token first: https://usnconeboxax1aos.cloud.onebox.dynamics.com
-  3. After logged in, go here: https://usnconeboxax1aos.cloud.onebox.dynamics.com/data/$metadata
+  2. Navigate to your D365 instance base URL to get auth token first.  For ex: https://usnconeboxax1aos.cloud.onebox.dynamics.com
+  3. After logged in, go here: {baseURL}/data/$metadata For ex: https://usnconeboxax1aos.cloud.onebox.dynamics.com/data/$metadata
   4. Allow it to load, might take several minutes. 
   5. After it finishes loading, then right click and download the file contents to c:\temp\data$metadata.xml
   6. Open the D365ODataClient.tt file
